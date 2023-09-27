@@ -1,3 +1,64 @@
-body {
-    background-color: white;
+#introtext {
+    position: relative;
+    
+}
+
+#wrapper {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+}
+
+#sky {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(63, 69, 87); 
+}
+
+#ship {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    left: 70px;
+    background: rgb(255, 182, 182);
+    border-radius: 50%
+}
+
+#lightone {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 800px solid rgba(255, 227, 181, 0);
+    top: 50px;
+    left: 110px;
+    transform: rotate(-30deg);
+}
+
+#lightone:hover {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 800px solid rgba(255, 227, 181, 0.462);
+    top: 50px;
+    left: 110px;
+    transform: rotate(-30deg);
+}
+
+/*
+#building1 {
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    background-color: rgb(63, 69, 87); 
+}*/
+
+#linktothree {
+    position: absolute;
 }
