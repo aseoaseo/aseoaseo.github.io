@@ -24,6 +24,17 @@ body {
     background-color: rgb(63, 69, 87); 
 }
 
+ #alien {
+    position: absolute;
+    transform: rotate(-22deg);
+    max-width: 70%; 
+    left:30px;
+ }
+
+ #buildings {
+    position: absolute;
+ }
+
 .stars {
     position: relative;
     width: 10px;
@@ -60,6 +71,21 @@ body {
     left: 150px;
 }
 
+#four {
+    top: 220px;
+    left: 300px;
+}
+
+#five {
+    top:350px;
+    left: 500px;
+}
+
+#six {
+    top: 170px;
+    left: 400px;
+}
+
 #shipp {
     position: absolute;
     width: 30px;
@@ -87,15 +113,7 @@ body {
 }
 
 
-#ship {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 70px;
-    left: 70px;
-    background: rgb(122, 232, 173);
-    border-radius: 50%
-}
+
 
 #light {
     position: absolute;
