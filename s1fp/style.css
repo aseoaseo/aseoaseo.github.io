@@ -78,12 +78,32 @@ body {
 
 #five {
     top:350px;
-    left: 500px;
+    left: 480px;
 }
 
 #six {
     top: 170px;
-    left: 400px;
+    left: 380px;
+}
+
+#seven {
+    top:60px;
+    left: 600px;
+}
+
+#eight {
+    top: 100px;
+    left: 700px;
+}
+
+#nine {
+    top: 100px;
+    left: 550px;
+}
+
+#ten {
+    top: 300px;
+    left:80px;
 }
 
 #shipp {
@@ -112,9 +132,6 @@ body {
   }
 }
 
-
-
-
 #light {
     position: absolute;
     width: 0;
@@ -139,14 +156,14 @@ body {
     transform: rotate(-30deg);
 }
 
-
-.buildings {
-    position: absolute;
-    width: 300px;
-    height: 700px;
-    background-color: rgb(63, 69, 87); 
-}
-
 #linktothree {
     position: absolute;
 }
+
+
+
+#styledtable td {
+    position: relative;
+    min-width: 200px;
+    height: 200px;
+  }
