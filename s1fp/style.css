@@ -261,3 +261,11 @@ a:hover {
     border: 1px solid #000000;
     float: left;
 }
+
+#ring {
+    position: absolute;
+    top: 760px;
+    left: 650px;
+    font-size: 14px;
+    color: rgb(252, 255, 208);
+}
