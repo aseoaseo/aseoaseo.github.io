@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(185, 167, 158);
+    background-color: rgba(118, 139, 84, 0.369);
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -16,6 +16,8 @@ body {
     position: relative;
     width: 800px;
     height: 800px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
 }
 
@@ -147,6 +149,13 @@ body {
     color: rgb(122, 232, 173);
 }
 
+#title {
+    padding-top:  10%;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(10, 36, 61);
+}
+
 
 .font {
     font-family: 'Dosis', sans-serif;
@@ -160,32 +169,47 @@ body {
     color: rgb(122, 232, 173);
 }
 
+#smile {
+    position: absolute;
+    top: 600px;
+    left: 600px;
+    font-size: 46px;
+    color: rgb(122, 232, 173);
+}
 
-
-
-#light {
+.light {
     position: absolute;
     width: 0;
     height: 0;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
     border-bottom: 1000px solid transparent;
+}
+
+#light1 {
     top: 50px;
     left: 160px;
     transform: rotate(-30deg);
 }
 
-#light:hover {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
+#light1:hover {
     border-bottom: 1000px solid rgba(250, 255, 183, 0.742);
-    top: 50px;
-    left: 160px;
-    transform: rotate(-30deg);
 }
+
+#light2 {
+    top: 90px;
+    left: -240px;
+    width: 40;
+    height: 40;
+    border-left: 400px solid transparent;
+    border-right: 400px solid transparent;
+    transform: rotate(34deg);
+}
+
+#light2:hover {
+    border-bottom: 1000px solid rgba(250, 255, 183, 0.742);
+}
+
 
 #Waittext {
     position: absolute;
@@ -208,10 +232,32 @@ a:hover {
     position: absolute;
 }
 
+#aliencaught {
+    position: absolute;
+ }
+
+#aliencaught:hover {
+    animation: move 0.5s infinite;
+}
+
+#streetback{
+    position: absolute;
+}
+
+#streetlight {
+    position: absolute;
+    left: 200px;
+    max-width: 70%; 
+}
+
+#one {
+    max-width: 100%; 
+}
 
 
-#styledtable td {
-    position: relative;
-    min-width: 200px;
-    height: 200px;
-  }
+.floatl {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000000;
+    float: left;
+}
