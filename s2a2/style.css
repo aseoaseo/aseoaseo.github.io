@@ -1,0 +1,25 @@
+#door {
+    background-image: url(doorr.png);
+    width: 750;
+    height: 750;
+    animation: spin 600ms steps(8) infinite; 
+}
+
+@keyframes spin {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: -800% 0%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #center {
+      margin-left: 0vw;
+      margin-top: 0vw;
+      width: 100vw;
+      height: 100vh;
+    }
+}
