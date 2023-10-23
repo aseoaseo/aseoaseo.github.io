@@ -1,25 +1,43 @@
+
+html, body {
+    margin: 0;
+}
+
 #door {
     background-image: url(doorr.png);
-    width: 750;
-    height: 750;
+    background-repeat: no-repeat;
+    background-size: 800vw auto;
     animation: spin 600ms steps(8) infinite; 
 }
 
+
 @keyframes spin {
     from {
-        background-position: 0% 0%;
+        background-position: 0vw;
     }
     to {
-        background-position: -800% 0%;
+        background-position: -800vw;
     }
 }
 
+a#button {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 50vw;
+    height: 20px;
+    background: rgb(0, 0, 0);
+}
 
-@media only screen and (max-width: 1000px) {
-    #center {
-      margin-left: 0vw;
-      margin-top: 0vw;
-      width: 100vw;
-      height: 100vh;
-    }
+#button:hover ~ #door, #button:focus ~ #door, #door:target {
+    animation: spin 100ms steps(8) infinite; 
+}
+
+
+.center {
+    align-items: center;
+    margin-left: 0vw;
+    margin-top: 0vw;
+    width: 100vw;
+    height: 100vw;
 }
