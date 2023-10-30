@@ -1,13 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 html, body {
     margin: 0;
 }
 
-#door {
+.font {
+    font-family: 'Dosis', sans-serif;
+}
+
+#wrapper {
+    position: relative;
+}
+
+@keyframes movealot {
+    0% {
+      transform: translateY(40vw);
+    }
+    20% {
+        transform: translateX(-20vw);
+    }
+    30% {
+        transform: translateY(-30vw);
+    }
+    40% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: scale(2);
+    }
+    70% {
+        transform: translateY(-80vw);
+    }
+    90% {
+        transform: translateX(20vw);
+    }
+}
+
+@keyframes movelittle {
+    50% {
+        transform: rotate(359deg);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes movesome {
+    0% {
+        transform: translateX(-20vw);
+      }
+    50% {
+        transform: translateX(20vw);
+    }
+    80% {
+        transform: translateX(-20vw);
+      }
+    90% {
+        transform: translateX(20vw);
+    }
+
+}
+
+#doorStill {
+    position: absolute;
     background-image: url(doorr.png);
     background-repeat: no-repeat;
     background-size: 800vw auto;
-    animation: spin 600ms steps(8) infinite; 
+    z-index: 4;
+    
+}
+
+#doorWalk {
+    position: absolute;
+    background-image: url(doorr.png);
+    background-repeat: no-repeat;
+    background-size: 800vw auto;
+    animation: spin 800ms steps(8) infinite; 
+    z-index: 3;
+}
+
+#doorRun {
+    position: absolute;
+    background-image: url(doorr.png);
+    background-repeat: no-repeat;
+    background-size: 800vw auto;
+    animation: spin 300ms steps(8) infinite; 
+    z-index: 2;
+}
+
+#doorFastest {
+    position: absolute;
+    background-image: url(doorr.png);
+    background-repeat: no-repeat;
+    background-size: 800vw auto;
+    animation: spin 70ms steps(8) infinite; 
+    z-index: 1;
+}
+
+.onTop {
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 30vw;
+    width:50vw;
+    z-index: 5;
+    display:none;
 }
 
 
@@ -20,24 +116,100 @@ html, body {
     }
 }
 
-a#button {
+a#stop {
+    position: absolute;
     text-align: center;
     color: white;
     display: inline-block;
-    width: 50vw;
-    height: 20px;
-    background: rgb(0, 0, 0);
+
+    margin-left: 2vw;
+    margin-top: 2vw;
+    line-height: 10vw;
+    width:22.5vw;
+    height:10vw;
+    background: rgb(248,166,166);
+    z-index: 4;
 }
 
-#button:hover ~ #door, #button:focus ~ #door, #door:target {
-    animation: spin 100ms steps(8) infinite; 
+#stop:hover ~ #doorStill, #doorStill:target {
+    z-index: 4;
 }
 
+a#walk {
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: inline-block;
+
+    line-height: 10vw;
+    margin-top: 2vw;
+    margin-left: 26.5vw;
+    width: 22.5vw;
+    height: 10vw;
+    background: rgb(239,134,134);
+    z-index: 4;
+}
+
+#walk:hover ~ #doorWalk, #doorWalk:target {
+    z-index: 4;
+}
+
+a#run {
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: inline-block;
+
+    line-height: 10vw;
+    margin-top: 2vw;
+    margin-left: 51vw;
+    width:22.5vw;
+    height:10vw;
+    background: rgb(233, 102, 102);
+    z-index: 4;
+}
+
+#run:hover ~ #doorRun, #doorRun:target {
+    z-index: 4;
+}
+
+a#fastest {
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: inline-block;
+
+    line-height: 10vw;
+    margin-top: 2vw;
+    margin-left: 75.5vw;
+    width:22.5vw;
+    height:10vw;
+    background: rgb(220, 58, 58);
+    z-index: 4;
+}
+
+#fastest:hover ~ #doorFastest, #doorFastest:target{
+    z-index: 4;
+}
+
+#doorFastest:hover > .onTop {
+    display:block;
+    animation: movealot 1s infinite alternate;
+} 
+
+#doorWalk:hover > .onTop {
+    display: block;
+    animation: movelittle 1s infinite alternate;
+} 
+
+#doorRun:hover > .onTop {
+    display: block;
+    animation: movesome 1s infinite alternate;
+} 
 
 .center {
     align-items: center;
-    margin-left: 0vw;
-    margin-top: 0vw;
+    margin-top: 10vw;
     width: 100vw;
     height: 100vw;
 }
