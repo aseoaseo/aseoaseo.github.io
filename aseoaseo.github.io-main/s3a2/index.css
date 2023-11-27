@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(72, 81, 150));
+  margin: 0;
+  height: 800vh;
+}
+
+.question {
+  font-size: 5.5vw;  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#questionOne{
+    position: relative;
+    z-index: 1;
+    top: 50vh;
+    text-align: center;
+}
+
+#questionTwo{
+  position: relative;
+  top: 150vh;
+  text-align: center;
+  z-index: 1;
+}
+
+#questionThree {
+  position: relative;
+  top: 250vh;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  z-index: 1;
+
+}
+
+#answer {
+  position: relative;
+  top: 350vh;
+  z-index: 1;
+  text-align: center;
+
+}
+
+#description {
+    font-size: 3vw;  
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: relative;
+  top: 450vh;
+  z-index: 1;
+  text-align: center;
+}
+
+#screenshot {
+  height: 50vw;
+  position: relative;
+  top: 450vh;
+  z-index: 1;
+  margin-left: 40vw;
+  margin-top: 5vw;
+}
+
+#Layer_1 {
+    /* animation: leave 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+  z-index: 0;
+}
+
+#icons {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+
+  z-index: 0;
+    overflow:hidden;
+}
+  
+@keyframes leave {
+    from {
+      transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+#tree {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  top:290vh;
+}
+
+#music {
+    width: 100vw;
+    z-index: 0;
+    position: relative;
+    top: -130vh;
+    display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+#icons2 {
+    z-index: 0;
+}
