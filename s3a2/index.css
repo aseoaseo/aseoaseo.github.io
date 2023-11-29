@@ -1,117 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dosis:wght@400;500&family=Montserrat:wght@200&family=Quicksand&display=swap');
 
 html{
-  scroll-behavior: smooth;
   margin: 0;
 }
 
 body {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(72, 81, 150));
+  background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(108, 31, 31)70%);
   margin: 0;
-  height: 800vh;
+  height: 850vh;
+  width: 100vw;
+  top: 0;
 }
 
 .question {
-  font-size: 5.5vw;  
-  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5vw;  
+  font-family: 'Barlow', sans-serif;
   font-weight: bold;
 }
 
 #questionOne{
-    position: relative;
-    z-index: 1;
-    top: 50vh;
-    text-align: center;
+  position: relative;
+  top: 50vh;
+  text-align: center;
+}
+
+@keyframes across {
+  0% {
+    translate: 100vw;
+  } 
+  100% {
+    translate: -120vw 0vh;
+    rotate: 10deg;
+    scale: 2;
+  }
+}
+
+#sleigh {
+  top: 10vh;
+  height: 20vh;
+  animation: across 4.5s infinite; 
+}
+
+#wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #questionTwo{
   position: relative;
   top: 150vh;
   text-align: center;
-  z-index: 1;
 }
 
 #questionThree {
   position: relative;
   top: 250vh;
   text-align: center;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  z-index: 1;
-
+  margin-left: 12vw;
+  margin-right: 12vw;
 }
 
 #answer {
   position: relative;
   top: 350vh;
-  z-index: 1;
   text-align: center;
-
+  color: rgb(242, 240, 197);
 }
 
 #description {
-    font-size: 3vw;  
-    margin-left: 15vw;
-    margin-right: 15vw;
-    position: relative;
+  font-size: 4vw;  
+  position: relative;
   top: 450vh;
-  z-index: 1;
   text-align: center;
 }
 
+#descriptionMore{
+  position: relative;
+  top: 460vh;
+  text-align: center;
+  color: rgb(242, 240, 197);
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
 #screenshot {
-  height: 50vw;
+  height: 60vh;
+  margin-left: 2vw;
+  box-shadow:  0 0 7px 7px rgba(255, 240, 195, 0.426);
+}
+
+#styledtable {
   position: relative;
   top: 450vh;
-  z-index: 1;
-  margin-left: 40vw;
-  margin-top: 5vw;
+  border-collapse: collapse;
+  font-size: 3vw;
+  place-items: center;
+  justify-content: center;
+  color: rgb(242, 240, 197);
 }
 
-#Layer_1 {
-    /* animation: leave 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
-  z-index: 0;
+#styledtable td {
+  width: 80vw;
+  text-align: center;
 }
 
-#icons {
-  width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  top:0;
-  left: 0;
-
-  z-index: 0;
-    overflow:hidden;
+.center {
+  margin-left: 15vw;
+  width: 70vw;
 }
-  
-@keyframes leave {
-    from {
-      transform: scale(1);
-    }
-    to {
-        transform: scale(2);
-    }
+
+#treewrapper {
+  z-index: -1;
+  position: relative;
+  top: 320vh;
+  height: 300vh;
+  overflow: hidden;
 }
 
 #tree {
-  position: relative;
-  z-index: 0;
   width: 100vw;
-  top:290vh;
 }
 
-#music {
-    width: 100vw;
-    z-index: 0;
-    position: relative;
-    top: -130vh;
-    display: flex;
-  place-items: center;
+#add {
+  background: rgb(107, 130, 97);
+  border-radius: 8%;
+  width: 16vw;
+  height: 3.5vw;
+  border-radius: 1vh;
+  display: flex; 
+  align-items: center;
   justify-content: center;
+  font-size: 2vw;
+  color: rgb(242, 240, 197);
+  margin-top: 3vw; 
+  margin-left: 9vw;
 }
 
-#icons2 {
-    z-index: 0;
+#add:hover {
+  background: rgb(46, 95, 28);
+}
+
+.container{
+  display: inline-block;
+  width: 75vw;
+}
+.type{
+  overflow: hidden;
+  width: 0;
+  animation:typing 10s forwards;
+}
+
+@keyframes typing {
+  80% { width: 0 }
+  100% { width: 100% }
 }
