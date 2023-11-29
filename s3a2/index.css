@@ -27,6 +27,7 @@ body {
 @keyframes across {
   0% {
     translate: 100vw;
+    rotate: 0;
   } 
   100% {
     translate: -120vw 0vh;
@@ -52,6 +53,32 @@ body {
   position: relative;
   top: 150vh;
   text-align: center;
+}
+
+#music {
+  position: relative;
+  top: 120vh;
+  height: 15vh;
+  animation: acrossleft 4.5s infinite; 
+}
+
+#musicwrapper {
+  position: absolute;
+  height: 400vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@keyframes acrossleft {
+  0% {
+    translate: -120vw;
+    rotate: 0;
+  } 
+  100% {
+    translate: 120vw 0vh;
+    rotate: 20deg;
+    scale: 2;
+  }
 }
 
 #questionThree {
@@ -155,6 +182,6 @@ body {
 }
 
 @keyframes typing {
-  80% { width: 0 }
+  70% { width: 0 }
   100% { width: 100% }
 }
