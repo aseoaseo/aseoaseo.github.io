@@ -1,24 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Content</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #ffcccc, #ffe6e6); 
+        }
+
+        iframe {
+            width: 600px; 
+            height: 700px;
+            border: 2px solid #ccc; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+            overflow: hidden; 
+        }
+    </style>
 </head>
-
 <body>
-    <div id = "wrapper">
-        <div class="center" id="doorStill" alt="A short triangular elf stands in a revolving door"></div>
-        <div class="center" id="doorWalk" alt="The elf starts to walk in the revolving door around and around. When hovered, the word wowwww appears while rotating."><img class="onTop" src="woww.png"></div>
-        <div class="center" id="doorRun" alt="The elf runs in the revolving door. When hovered, the word Weeeeee and a smiley face appears while moving back and forth horizontally."><img class="onTop" src="Weee.png"></div>
-        <div class="center" id="doorFastest" alt="The elf dashes around in the revolving door even faster. When hovered, the word AGHHHHHHH appears while bolting around the page."><img class="onTop" src="AGH.png"></div>
-    </div>
-    
-    <div id = "wrapper"> 
-        <div class = "font">
-            <a href="#doorStill" id="stop" alt="A button that says STOP, which stops the elf from moving">STOP</a>
-            <a href="#doorWalk" id= "walk" alt="A button that says SPIN?, which makes the elf walk">SPIN?</a>
-            <a href="#doorRun" id="run" alt="A button that says FASTER?, which makes the elf run">FASTER?</a>
-            <a href="#doorFastest" id= "fastest" alt="A button that says EVEN FASTER?, which makes the elf sprint very fast">EVEN FASTER?</a>
-    </div>
-    
-    
-
+    <iframe src="s2a2-old.html" title="Embedded Content" scrolling="no"></iframe>
 </body>
-
+</html>

@@ -2,6 +2,7 @@
 
 html, body {
     margin: 0;
+    background: white;
 }
 
 .font {
@@ -128,6 +129,7 @@ a#stop {
     width:22.5vw;
     height:10vw;
     background: rgb(248,166,166);
+    border-radius: 10px;
     z-index: 4;
 }
 
@@ -147,6 +149,7 @@ a#walk {
     width: 22.5vw;
     height: 10vw;
     background: rgb(239,134,134);
+    border-radius: 10px;
     z-index: 4;
 }
 
@@ -166,6 +169,7 @@ a#run {
     width:22.5vw;
     height:10vw;
     background: rgb(233, 102, 102);
+    border-radius: 10px;
     z-index: 4;
 }
 
@@ -185,6 +189,7 @@ a#fastest {
     width:22.5vw;
     height:10vw;
     background: rgb(220, 58, 58);
+    border-radius: 10px;
     z-index: 4;
 }
 
@@ -212,4 +217,5 @@ a#fastest {
     margin-top: 10vw;
     width: 100vw;
     height: 100vw;
+    background: white;
 }
